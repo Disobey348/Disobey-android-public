@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_trade"
+        android:title="Games"
+        android:icon="@drawable/baseline_videogame_asset_24"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+
+    <item
+        android:id="@+id/bottom_nav_leaderboards"
+        android:title="Ranks"
+        android:icon="@drawable/baseline_leaderboard_24"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+    <item
+        android:id="@+id/bottom_nav_map"
+        android:title="Map"
+        android:icon="@drawable/baseline_location_on_24"
+        app:cnb_textColor="@color/black"
+        app:cnb_iconColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+
+    <item
+        android:id="@+id/bottom_nav_cam"
+        android:title="Cam"
+        android:icon="@drawable/baseline_photo_camera_24"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+    <item
+        android:id="@+id/bottom_nav_dashboard"
+        android:title="Profile"
+        android:icon="@drawable/baseline_perm_identity_24"
+        app:cnb_textColor="@color/black"
+        app:cnb_iconColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+
+</menu>

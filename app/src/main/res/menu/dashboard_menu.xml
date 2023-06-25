@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_backpack"
+        android:title="Backpack"
+        android:icon="@drawable/baseline_backpack_24"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+    <item
+        android:id="@+id/bottom_nav_stats"
+        android:title="Stats"
+        android:icon="@drawable/baseline_perm_identity_24"
+        app:cnb_textColor="@color/black"
+        app:cnb_iconColor="@color/black"
+        app:cnb_backgroundColor="#ffffff"/>
+
+</menu>

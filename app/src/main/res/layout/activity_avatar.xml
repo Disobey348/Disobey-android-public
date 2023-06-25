@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Avatar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/SaveImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/button_description"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ui_ux__2_" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+
+                android:visibility="gone"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ui_ux__2_" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AvatarImageLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/AvatarViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/AvatarBGView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitEnd"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/avatar_bg" />
+
+                <ImageView
+                    android:id="@+id/AvatarImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/female1" />
+
+                <ImageView
+                    android:id="@+id/BottomImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/qw" />
+
+                <ImageView
+                    android:id="@+id/SneakerImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/high_top_sneakerss" />
+
+                <ImageView
+                    android:id="@+id/TopImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/disobey_hoodie_white" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="8">
+
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="20dp">
+
+                    <ImageButton
+                        android:id="@+id/GenderCstButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="@string/button_description"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/gender_cst_ib" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="20dp">
+
+                    <ImageButton
+                        android:id="@+id/TsCstButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:background="#0000FFFF"
+                        android:contentDescription="@string/button_description"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/top_cst_ib" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="20dp">
+
+                    <ImageButton
+                        android:id="@+id/PaCstButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="#0000FFFF"
+                        android:contentDescription="@string/button_description"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/bottom_cst_ib" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="20dp">
+
+                    <ImageButton
+                        android:id="@+id/SnCstButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:background="#0000FFFF"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/sneaker_cst_ib" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+
+        android:id="@+id/BottomCardViewSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="4"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/GenderCstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/MaleSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Male" />
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/FemaleSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Female" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:id="@+id/FemaleScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="7">
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/fm2icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleImageIcon1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/fm1icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/f1icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/f2icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/f3icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/f4icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_FemaleButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+
+                                    <ImageView
+                                        android:id="@+id/FemaleButton6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="6"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/f5icon" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/MaleScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="7">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/base_icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="15dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/av2icon" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/m1icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/m2icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/m3icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/m4icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_MaleButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <ImageView
+                                        android:id="@+id/MaleImageIcon6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:foregroundGravity="center"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/m5icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TopCstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/HoodiesSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Hoodies" />
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/TeesSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Tee Shirts" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:id="@+id/HoodieScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:visibility="visible"
+                            android:weightSum="5">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Hoodie1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false"
+                                app:contentPadding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:text="WHITE"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        app:autoSizeTextType="none"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="9"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/disobey_hoodie_white_ib" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Hoodie3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false"
+                                app:contentPadding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:text="BLACK"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="9"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/disobey_hoodie_black_ib" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Hoodie4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false"
+                                app:contentPadding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:text="BEIGE"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="9"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/beige_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Hoodie5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false"
+                                app:contentPadding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:text="ORANGE"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/cv_H_orange"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="9"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/orange_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Hoodie6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:paddingStart="50dp"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false"
+                                app:contentPadding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingRight="50dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:text="THUMBHOLE"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/cv_H_thumbHoleblack"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="9"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/thumbhole_hoodie_black_icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/TeeShirtScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:paddingRight="5dp"
+                            android:weightSum="7">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+
+                                        android:text="BLACK"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/tee_black_icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="false"
+                                        android:text="PURPLE"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/tee_purple_icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="true"
+                                        android:text="'WHITE'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/tsb6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/tee_white_icon" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="true"
+                                        android:text="DUELIST"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/dualist"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/duelist_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="true"
+                                        android:text="CONTROLLER"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/controller"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/controller_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="true"
+                                        android:text="INITIATOR"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/initiator"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/initiator_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Top_Tee7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="50dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="50dp"
+                                    android:paddingBottom="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:autoText="true"
+                                        android:text="SENTINEL"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/sentinel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="centerCrop"
+                                        app:srcCompat="@drawable/oversized_tee_sentinel_ic" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BottomCstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible">
+
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/ShortsSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Shorts" />
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/PantsSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Pants" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ShortsScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="visible"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Bottom2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="30dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="'OLIVE'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/pab2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/olive_green_half_pants_buttonimage" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Bottom1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingLeft="30dp"
+                                    android:paddingTop="20dp"
+                                    android:paddingRight="30dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="'MARON'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+
+                                    <ImageView
+                                        android:id="@+id/pab1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/maroon_half_pant_ib" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/ButtonName"
+                        android:visibility="gone">
+
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:id="@+id/PantsScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="4">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Bottom3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="'BEIGE'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/pab3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/cargo_pants_beige" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Bottom4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="'BLUE'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/pab4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/cargo_pants_blue" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Bottom5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="20dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="'OLIVE'"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/pab5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="8"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/button_description"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/cargo_pants_olive_" />
+
+                                </LinearLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/SneakerCstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible">
+
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/HighTopSneakerSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Sneakers"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:id="@+id/LowTopSneakerSubSecButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/black"
+                        android:text="Rare Sneakers"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/HightTopSneakerScrollView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="5">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Sneaker1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="40dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="LOW TOP"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/snb1"
+                                        android:layout_width="200dp"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="8.5"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/low_top_white_sneakers" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Sneaker2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="40dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="HIGH TOP"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/snb2"
+                                        android:layout_width="200dp"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+
+                                        android:layout_weight="8.5"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/high_top_white_sneakers_ib" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Sneaker3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="40dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="PURPLE GHOST"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/snb3"
+                                        android:layout_width="200dp"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+
+                                        android:layout_weight="8.5"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/purple_ghost__1_" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:backgroundTint="@color/white"
+                                android:background="@color/white"
+
+                                android:id="@+id/card_view_Sneaker4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="20dp"
+                                app:cardUseCompatPadding="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="40dp"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="2"
+                                        android:text="Chroma Wave"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"></TextView>
+
+                                    <ImageView
+                                        android:id="@+id/snb4"
+                                        android:layout_width="200dp"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+
+                                        android:layout_weight="8.5"
+                                        android:background="#00FFFFFF"
+                                        android:contentDescription="@string/app_name"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/chroma_wave_icon" />
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
